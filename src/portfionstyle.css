@@ -1,0 +1,115 @@
+@keyframes fadeInUp {
+from {
+opacity: 0;
+transform: translateY(20px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+.animate-fade-in-up {
+animation: fadeInUp 1s ease-out forwards;
+}
+
+@keyframes slideInFromLeft {
+from {
+opacity: 0;
+transform: translateX(-50px);
+}
+to {
+opacity: 1;
+transform: translateX(0);
+}
+}
+
+@keyframes fadeInScale {
+from {
+opacity: 0;
+transform: scale(0.8);
+}
+to {
+opacity: 1;
+transform: scale(1);
+}
+}
+
+@keyframes glowing-border {
+0% { box-shadow: 0 0 5px #00FFFF, inset 0 0 5px #00FFFF; }
+50% { box-shadow: 0 0 20px #00FFFF, inset 0 0 20px #00FFFF; }
+100% { box-shadow: 0 0 5px #00FFFF, inset 0 0 5px #00FFFF; }
+}
+
+@keyframes flicker {
+0%, 100% { opacity: 1; }
+45%, 55% { opacity: 0.8; }
+}
+
+.hero-text-animate {
+animation: slideInFromLeft 1s ease-out forwards;
+}
+
+.hero-img-animate {
+animation: fadeInScale 1s ease-out 0.3s forwards;
+}
+
+.hero-banner-glow {
+animation: glowing-border 2s infinite ease-in-out;
+}
+
+.code-flicker {
+animation: flicker 2s infinite;
+}
+
+/* Smooth scroll for anchor links */
+html {
+scroll-behavior: smooth;
+}
+
+/* Custom hover effects for cards */
+.card-hover-effect:hover {
+transform: translateY(-8px) scale(1.02);
+box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.dark .card-hover-effect:hover {
+box-shadow: 0 10px 15px -3px rgba(255, 255, 255, 0.05), 0 4px 6px -2px rgba(255, 255, 255, 0.02);
+}
+
+/* Modal specific animations */
+@keyframes fadeIn {
+from { opacity: 0; }
+to { opacity: 1; }
+}
+.animate-fade-in {
+animation: fadeIn 0.3s ease-out forwards;
+}
+
+@keyframes scaleIn {
+from { transform: scale(0.9); opacity: 0; }
+to { transform: scale(1); opacity: 1; }
+}
+.animate-scale-in {
+animation: scaleIn 0.3s ease-out forwards;
+}
+
+.skill-glow-effect {
+box-shadow: 0 0 15px #00FFFF, 0 0 20px #00FFFF;
+transform: translateY(-8px) scale(1.05);
+}
+
+.skill-blur-effect {
+filter: blur(2px) grayscale(50%) opacity(0.5);
+transition: all 0.3s ease-in-out;
+}
+
+.project-glow-effect {
+box-shadow: 0 0 15px #00FFFF, 0 0 20px #00FFFF;
+transform: translateY(-8px) scale(1.05);
+}
+
+.project-blur-effect {
+filter: blur(2px) grayscale(50%) opacity(0.5);
+transition: all 0.3s ease-in-out;
+}

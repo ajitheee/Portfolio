@@ -254,7 +254,6 @@ function App() {
   return (
     // Apply dark mode class to the main div
     <div className={`min-h-screen font-sans relative overflow-x-hidden ${darkMode ? 'dark bg-gray-900 text-gray-100' : 'bg-gray-100 text-gray-900'}`}>
-      {/* Custom CSS for animations and smooth scrolling */}
       <style>
         {`
         @keyframes fadeInUp {
@@ -354,7 +353,7 @@ function App() {
         }
 
         .skill-glow-effect {
-          box-shadow: 0 0 15px theme('colors.cyan.400'), 0 0 20px theme('colors.cyan.400');
+          box-shadow: 0 0 15px #00FFFF, 0 0 20px #00FFFF;
           transform: translateY(-8px) scale(1.05);
         }
 
@@ -364,7 +363,7 @@ function App() {
         }
 
         .project-glow-effect {
-          box-shadow: 0 0 15px theme('colors.cyan.400'), 0 0 20px theme('colors.cyan.400');
+          box-shadow: 0 0 15px #00FFFF, 0 0 20px #00FFFF;
           transform: translateY(-8px) scale(1.05);
         }
 
@@ -372,10 +371,8 @@ function App() {
           filter: blur(2px) grayscale(50%) opacity(0.5);
           transition: all 0.3s ease-in-out;
         }
-
         `}
       </style>
-
       {/* Navbar Section */}
       <nav className="bg-white dark:bg-gray-800 shadow-md p-4 sticky top-0 z-50 rounded-b-lg">
         <div className="container mx-auto flex justify-between items-center">
